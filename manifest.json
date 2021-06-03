@@ -1,0 +1,20 @@
+{
+	"name": "Copy Page URL Hotkey",
+	"manifest_version": 2,
+	"version": "1.0",
+	"description": "Copies the url of the current page. Modify hotkey at: chrome://extensions/shortcuts",
+	"background": {
+        	"scripts": ["background.js"]
+    	},
+	"commands": {
+		"copy-url-hotkey": {
+			"suggested_key" : {
+				"default" : "Alt+C"
+                    	},
+			"description" : "Copy URL of current page "
+		}
+	},
+	"permissions": [
+		"activeTab", "tabs", "http://*/*", "https://*/*"
+	]
+}
